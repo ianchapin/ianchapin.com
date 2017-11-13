@@ -1,0 +1,14 @@
+{
+  "name": "ianchapin.com",
+  "version": "1.0.0",
+  "description": "Example app using Gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Chapin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

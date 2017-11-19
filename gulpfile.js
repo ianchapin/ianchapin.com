@@ -40,6 +40,7 @@ gulp.task('minify-css', ['sass'], function () {
         .pipe(rename({
             suffix: '.min'
         }))
+        .pipe(gulp.dest('css'))
         .pipe(gulp.dest('production/css'))
         .pipe(browserSync.reload({
             stream: true
@@ -56,6 +57,7 @@ gulp.task('minify-js', function () {
         .pipe(rename({
             suffix: '.min'
         }))
+        .pipe(gulp.dest('js'))
         .pipe(gulp.dest('production/js'))
         .pipe(browserSync.reload({
             stream: true
@@ -82,18 +84,23 @@ gulp.task('copy', function () {
       '!**/bootstrap-theme.*',
       '!**/*.map'
     ])
+        .pipe(gulp.dest('vendor/bootstrap'))
         .pipe(gulp.dest('production/vendor/bootstrap'))
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
+        .pipe(gulp.dest('vendor/jquery'))
         .pipe(gulp.dest('production/vendor/jquery'))
 
     gulp.src(['node_modules/magnific-popup/dist/*'])
+        .pipe(gulp.dest('vendor/magnific-popup'))
         .pipe(gulp.dest('production/vendor/magnific-popup'))
 
     gulp.src(['node_modules/scrollreveal/dist/*.js'])
+        .pipe(gulp.dest('vendor/scrollreveal'))
         .pipe(gulp.dest('production/vendor/scrollreveal'))
 
     gulp.src(['node_modules/jquery.easing/*.js'])
+        .pipe(gulp.dest('vendor/jquery-easing'))
         .pipe(gulp.dest('production/vendor/jquery-easing'))
 
     gulp.src([
@@ -104,6 +111,7 @@ gulp.task('copy', function () {
       '!node_modules/font-awesome/*.md',
       '!node_modules/font-awesome/*.json'
     ])
+        .pipe(gulp.dest('vendor/font-awesome'))
         .pipe(gulp.dest('production/vendor/font-awesome'))
 })
 

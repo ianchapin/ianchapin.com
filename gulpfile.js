@@ -1,11 +1,13 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var header = require('gulp-header');
-var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
-var pkg = require('./package.json');
+var gulp = require('gulp'),
+sass = require('gulp-sass'),
+browserSync = require('browser-sync').create(),
+header = require('gulp-header'),
+cleanCSS = require('gulp-clean-css'),
+rename = require("gulp-rename"),
+uglify = require('gulp-uglify'),
+pkg = require('./package.json'),
+imagemin = require('gulp-imagemin');
+
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -59,6 +61,14 @@ gulp.task('minify-js', function() {
       stream: true
     }))
 });
+
+// Minify images
+gulp.task('image', function() {
+    gulp.src('img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('build/img'));
+});
+
 
 // Copy vendor files from /node_modules into /vendor
 // NOTE: requires `npm install` before running!

@@ -1,0 +1,17 @@
+// Styling For Social Media Section
+section.social-media {
+
+    padding: 5rem 0;
+
+    .sm-circle {
+        color: $secondary;
+        background: $white;
+        width: 112px;
+        height: 112px;
+        text-align: center;
+        padding-top: 16px;
+        margin: 0px auto;
+        margin-top: -125px;
+        border-radius: 100px;
+    }
+}

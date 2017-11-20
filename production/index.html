@@ -36,7 +36,7 @@
 
 </head>
 
-<body id="page_top" class="test">
+<body id="page_top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -56,20 +56,10 @@
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+                        <a class="nav-link js-scroll-trigger" href="#work">Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="js-scroll-trigger d-none d-lg-block">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/ianchapin/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="https://github.com/ianchapin" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
@@ -81,11 +71,9 @@
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="text-uppercase text-left">
+                    <p class="text-uppercase text-left">
                         <strong>Set your business apart from the competition.</strong>
-                    </h1>
-                    <p class="mb-5" style="color:#BECBDB">Hi, my name is Ian.<br><br>I create <strong>functional</strong> &amp; <strong>aesthetically pleasing</strong> websites for small businesses. Below are a few services I provide:</p>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Find Out More</a>
+                    </p>
                 </div>
                 <div class="col-lg-6">
 
@@ -93,33 +81,52 @@
             </div>
         </div>
     </header>
+    
+    <!-- Brief Introduction -->
+    <section class="brief-introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 my-auto">
+                    <p>Hi, my name is Ian. I create <strong>functional</strong> &amp; <strong>aesthetically pleasing</strong> websites for small businesses. Below are a few services I provide:</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Services -->
     <main class="services" id="services">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-3 col-md-6">
-                    <i class="fa fa-desktop fa-4x icon sr-icons mb-2" aria-hidden="true"></i>
+                <div class="col-lg-3">
+                    <div class="services-circle">
+                        <i class="fa fa-paint-brush fa-4x icon-wd sr-icons mb-2" aria-hidden="true"></i>
+                    </div>
                     <h2 class="text-uppercase">Website Design</h2>
-                    <hr>
+                    <hr class="d-none d-lg-block my-4">
                     <p>Each of my designs begins with a blank canvas which allows your content to guide the layout.</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <i class="fa fa-code fa-4x icon sr-icons mb-2" aria-hidden="true"></i>
+                <div class="col-lg-3">
+                    <div class="services-circle">
+                        <i class="fa fa-code fa-4x icon-dev sr-icons mb-2" aria-hidden="true"></i>
+                    </div>
                     <h2 class="text-uppercase">Development</h2>
-                    <hr>
+                    <hr class="d-none d-lg-block my-4">
                     <p>Responsive development will help make your website easily accessible across all devices.</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <i class="fa fa-envelope-o fa-4x icon sr-icons mb-2" aria-hidden="true"></i>
+                <div class="col-lg-3">
+                    <div class="services-circle">
+                        <i class="fa fa-envelope-o fa-4x icon-nl sr-icons mb-2" aria-hidden="true"></i>
+                    </div>
                     <h2 class="text-uppercase">Newsletter</h2>
-                    <hr>
+                    <hr class="d-none d-lg-block my-4">
                     <p>A matching newsletter is the perfect way to complement your website &amp; keep in contact.</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <i class="fa fa-share-square-o fa-4x icon sr-icons mb-2" aria-hidden="true"></i>
+                <div class="col-lg-3">
+                    <div class="services-circle">
+                        <i class="fa fa-share-square-o fa-4x icon-sm sr-icons mb-2" aria-hidden="true"></i>
+                    </div>
                     <h2 class="text-uppercase">Social Media</h2>
-                    <hr>
+                    <hr class="d-none d-lg-block my-4">
                     <p>It's important to keep your brand consistent and recognizable across all platforms.</p>
                 </div>
             </div>
@@ -127,26 +134,39 @@
     </main>
 
     <!-- About Me -->
-    <section class="aboutme" id="about">
-        <div class="container">
+    <section class="about-me" id="about">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6 d-none d-lg-block about-img">
                     <img class="img-fluid" src="img/me.jpg" alt="me">
                 </div>
-                <div class="col-lg-6 my-auto">
-                    <h1 class="text-uppercase" style="color:#212C40">About Me</h1>
-                    <p>In the fall of 2013, during my second year of college at MCCKC, I took a C++ programming course and fell in love with programming. I self taught myself web programming soon after and then later transferred to UCM where I took web programming courses and solidified my knowledge further. In my free time, I love to learn more about programming and challenge myself by trying new things.</p>
+                <div class="col-md-12 col-lg-6 my-auto px-5">
+                    <h3>About Me</h3>
+                    <p>In the fall of 2013, during my second year at college, I took a C++ programming course and fell in love with it. I decided that programming was something I wanted to pursue. I graduated in May of 2017 with a Bachelor of Science in Computer Science from the University of Central Missouri.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
+    <!-- Social Media -->
+    <section class="social-media">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-
+                    <div class="sm-circle d-none d-lg-block">
+                        <i class="fa fa-linkedin-square fa-4x icon-wd sr-icons-sm" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Work -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
                 </div>
             </div>
         </div>

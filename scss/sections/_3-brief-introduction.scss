@@ -1,0 +1,56 @@
+// Styling for Brief Introduction Section
+section.brief-introduction {
+
+    background: $quaternary;
+    padding: 5rem 0;
+    text-align: center;
+
+    p {
+        color: $secondary;
+        font-size: 1.2rem;
+
+        strong {
+            font-size: 1.3rem;
+            color: $black;
+        }
+    }
+
+
+    @media (min-width: 576px) {
+        p {
+            color: $secondary;
+            font-size: 1.2rem;
+
+            strong {
+                font-size: 1.3rem;
+                color: $black;
+            }
+        }
+    }
+    
+    @media (min-width: 768px) {
+        p {
+            color: $secondary;
+            font-size: 1.5rem;
+
+            strong {
+                font-size: 1.6rem;
+                color: $black;
+            }
+        }
+    }
+    
+    @media (min-width: 992px) {
+        height: 30vh;
+        p {
+            color: $secondary;
+            font-size: 1.8rem;
+
+            strong {
+                font-size: 1.9rem;
+                color: $black;
+            }
+        }
+    }
+    
+}

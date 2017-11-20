@@ -1,10 +1,17 @@
-@import "variables.scss";
-@import "mixins.scss";
-@import "global.scss";
-@import "navbar.scss";
-@import "masthead.scss";
-@import "services.scss";
-@import "aboutme.scss";
-@import "portfolio.scss";
-@import "contact.scss";
-@import "bootstrap-overrides.scss";
+// General
+@import "general/variables.scss";
+@import "general/mixins.scss";
+@import "general/global.scss";
+
+// Bootstrap Overrides
+@import "general/bootstrap-overrides.scss";
+
+// Sections
+@import "sections/1-navbar.scss";
+@import "sections/2-masthead.scss";
+@import "sections/3-brief-introduction";
+@import "sections/4-services.scss";
+@import "sections/5-about-me.scss";
+@import "sections/6-social-media";
+@import "sections/7-work.scss";
+@import "sections/8-contact.scss";

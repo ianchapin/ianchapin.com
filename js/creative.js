@@ -8,7 +8,7 @@
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html, body').animate({
-                    scrollTop: (target.offset().top - 57)
+                    scrollTop: (target.offset().top - 127)
                 }, 1000, "easeInOutExpo");
                 return false;
             }
@@ -23,7 +23,7 @@
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 58
+        offset: 128
     });
 
     // Collapse Navbar
@@ -42,6 +42,11 @@
     // Scroll reveal calls
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('.sr-icons-sm', {
         duration: 600,
         scale: 0.3,
         distance: '0px'

@@ -2,5 +2,5 @@
 My personal homepage.
 
 ## TO DO
-- Make social media icons go horizontal in small screen size.
+- Cycle through social media links with icons.
 - Add projects to main page.

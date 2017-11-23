@@ -4,7 +4,15 @@ main.services {
     color: $black;
     background: $white;
     padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
+    
+    h1, h2 {
+        font-size: 2rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
     
     .services-circle {
         background: $white;
@@ -31,6 +39,11 @@ main.services {
     
     .icon-sm {
         color: $secondary;
+    }
+    
+    @media (min-width: 992px) {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
     }
     
 }

@@ -162,6 +162,8 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover; }
   header.masthead p {
+    font-family: 'Roboto'; }
+  header.masthead p {
     color: #fff;
     font-size: 2rem;
     text-shadow: 0px 0px 2rem black; }
@@ -219,7 +221,11 @@ main.services {
   color: #0D0D0F;
   background: #fff;
   padding-top: 5rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 5rem; }
+  main.services h1, main.services h2 {
+    font-size: 2rem; }
+  main.services .title {
+    font-size: 1.5rem; }
   main.services .services-circle {
     background: #fff;
     width: 112px;
@@ -237,9 +243,15 @@ main.services {
     color: #89A4C2; }
   main.services .icon-sm {
     color: #212C40; }
+  @media (min-width: 992px) {
+    main.services {
+      padding-top: 5rem;
+      padding-bottom: 10rem; } }
 
 section.about-me {
-  background: #3D5F8F; }
+  background: #3D5F8F;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
   section.about-me h3 {
     font-size: 2.5rem;
     color: #BECBDB; }
@@ -248,11 +260,15 @@ section.about-me {
     color: #fff; }
   section.about-me .about-img {
     padding-left: 0; }
+  @media (min-width: 992px) {
+    section.about-me {
+      padding-top: 0rem;
+      padding-bottom: 0rem; } }
 
 section.social-media {
   padding: 5rem 0; }
   section.social-media .sm-circle {
-    color: #212C40;
+    color: #89A4C2;
     background: #fff;
     width: 112px;
     height: 112px;
@@ -323,23 +339,27 @@ footer.contact {
   footer.contact hr {
     margin-top: 30px;
     margin-bottom: 30px; }
-  footer.contact h1 {
+  footer.contact h3 {
     font-size: 2rem;
     text-shadow: 0px 0px 6px #0D0D0F; }
   footer.contact p {
     font-weight: 300;
     text-shadow: 0px 0px 6px #0D0D0F; }
+  @media (min-width: 576px) {
+    footer.contact p {
+      font-size: 1.15rem; }
+    footer.contact h3 {
+      font-size: 2rem; } }
   @media (min-width: 768px) {
     footer.contact p {
-      font-size: 1.15rem; } }
+      font-size: 1.15rem; }
+    footer.contact h3 {
+      font-size: 3rem; } }
   @media (min-width: 992px) {
     footer.contact {
       height: 60vh;
       min-height: 400px;
       padding-top: 0;
       padding-bottom: 0; }
-      footer.contact h1 {
-        font-size: 3rem; } }
-  @media (min-width: 1200px) {
-    footer.contact h1 {
-      font-size: 4rem; } }
+      footer.contact h3 {
+        font-size: 4rem; } }

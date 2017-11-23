@@ -1,6 +1,6 @@
 (function ($) {
     "use strict"; // Start of use strict
-
+    
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -39,14 +39,12 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
+    // Parallax Backgrounds
+    
+    
     // Scroll reveal calls
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
-        duration: 600,
-        scale: 0.3,
-        distance: '0px'
-    }, 200);
-    sr.reveal('.sr-icons-sm', {
         duration: 600,
         scale: 0.3,
         distance: '0px'

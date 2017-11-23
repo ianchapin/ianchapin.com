@@ -6,6 +6,9 @@ header.masthead {
     background-image: url('../img/header.jpg');
     background-position: center center;
     border-bottom: 3px solid $secondary;
+    p {
+        font-family: 'Roboto';
+    }
 
     @include background-cover;
 

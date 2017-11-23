@@ -155,6 +155,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
+  background-position-y: -100px;
   background-attachment: fixed;
   border-bottom: 3px solid #212C40;
   -webkit-background-size: cover;
@@ -182,6 +183,10 @@ header.masthead {
       height: 75vh;
       padding-top: 0;
       padding-bottom: 0; } }
+  @media only screen and (max-device-width: 1024px) {
+    header.masthead {
+      background-attachment: scroll;
+      background-position-y: 0px; } }
 
 section.brief-introduction {
   background: #BECBDB;
@@ -332,8 +337,6 @@ footer.contact {
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/footer.jpg");
   background-attachment: fixed;
-  background-position: center;
-  top: -1000px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -365,3 +368,7 @@ footer.contact {
       padding-bottom: 0; }
       footer.contact h3 {
         font-size: 4rem; } }
+  @media only screen and (max-device-width: 1024px) {
+    footer.contact {
+      background-attachment: scroll;
+      background-position-y: 0px; } }

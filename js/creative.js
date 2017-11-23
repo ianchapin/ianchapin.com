@@ -13,10 +13,12 @@
     // Magnific Popups
     magnific();
     
-    // Parallax Elements\
-    $(window).scroll(function() {
-        parallax();
-    });
+    // Parallax Elements
+    if($(document).width() > 1024) {
+        $(window).scroll(function() {
+            parallax();
+        });
+    }
     
     
     //===========================================================================
@@ -128,7 +130,7 @@
         
         var currentX = $('.parallax-top').css
         
-        $('.parallax-top').css('background-position-y', (wScroll * -0.6)+'px');
+        $('.parallax-top').css('background-position-y', -100+(wScroll * -0.6)+'px');
         
         $('.parallax-bottom').css('background-position-y', 275+(wScroll * -0.1)+'px');
     }

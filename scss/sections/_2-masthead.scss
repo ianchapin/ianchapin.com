@@ -4,8 +4,8 @@ header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
     background-image: url('../img/header.jpg');
+    background-position-y: -100px; 
     background-attachment: fixed;
-    //background-position: center center;
     border-bottom: 3px solid $secondary;
 
     p {
@@ -40,6 +40,11 @@ header.masthead {
         height: 75vh;
         padding-top: 0;
         padding-bottom: 0;
+    }
+    
+    @media only screen and (max-device-width: 1024px) {
+        background-attachment: scroll;
+        background-position-y: 0px;
     }
 
 }

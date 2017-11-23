@@ -5,7 +5,9 @@ footer.contact {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
     background-image: url('../img/footer.jpg');
-    background-position: center center;
+    background-attachment: fixed;
+    background-position: center;
+    top: -1000px;
     
     @include background-cover;
     

@@ -155,7 +155,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
-  background-position: center center;
+  background-attachment: fixed;
   border-bottom: 3px solid #212C40;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -331,7 +331,9 @@ footer.contact {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/footer.jpg");
-  background-position: center center;
+  background-attachment: fixed;
+  background-position: center;
+  top: -1000px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

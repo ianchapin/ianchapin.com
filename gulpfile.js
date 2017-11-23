@@ -94,10 +94,6 @@ gulp.task('copy', function () {
     gulp.src(['node_modules/magnific-popup/dist/*'])
         .pipe(gulp.dest('vendor/magnific-popup'))
         .pipe(gulp.dest('production/vendor/magnific-popup'))
-
-    gulp.src(['node_modules/scrollmagic/scrollmagic/minified/*.js'])
-        .pipe(gulp.dest('vendor/scrollmagic'))
-        .pipe(gulp.dest('production/vendor/scrollmagic'))
     
     gulp.src(['node_modules/scrollreveal/dist/*.js'])
         .pipe(gulp.dest('vendor/scrollreveal'))
@@ -106,10 +102,6 @@ gulp.task('copy', function () {
     gulp.src(['node_modules/jquery.easing/*.js'])
         .pipe(gulp.dest('vendor/jquery-easing'))
         .pipe(gulp.dest('production/vendor/jquery-easing'))
-    
-    gulp.src(['node_modules/gsap/src/minified/TweenMax.min.js'])
-        .pipe(gulp.dest('vendor/gsap'))
-        .pipe(gulp.dest('production/vendor/gsap'))
 
     gulp.src([
       'node_modules/font-awesome/**',

@@ -1,6 +1,9 @@
 (function ($) {
     "use strict"; // Start of use strict
     
+    // Fade In
+    fadeIn();
+    
     // Smooth Scrolling
     smoothScroll();
     
@@ -8,7 +11,7 @@
     collapseNav();
     
     // Scroll Reveal
-    scrollreveal();
+    scrollReveal();
 
     // Magnific Popups
     magnific();
@@ -20,6 +23,22 @@
         });
     }
     
+    // Social Media Coin
+    smCoin();
+    
+    //===========================================================================
+    // Fade In
+    //===========================================================================
+    
+    function fadeIn() {
+        
+        $(document).ready(function(){
+            $('.masthead p, .navbar li').hide().fadeIn(2500);
+            $('h1, h2, h3, h4, h5, p:not(.headline)').hide().fadeIn(1000);
+            $('.about-me').hide().fadeIn(2000);
+        });
+        
+    }
     
     //===========================================================================
     // Smooth Scrolling
@@ -60,10 +79,10 @@
     function collapseNav() {
         
         var navbarCollapse = function () {
-            if ($("#mainNav").offset().top > 0) {
-                $("#mainNav").addClass("navbar-shrink");
+            if ($('#mainNav').offset().top > 0) {
+                $('#mainNav').addClass('navbar-shrink');
             } else {
-                $("#mainNav").removeClass("navbar-shrink");
+                $('#mainNav').removeClass('navbar-shrink');
             }
         };
         // Collapse now if page is not at top
@@ -77,22 +96,43 @@
     // Scroll Reveal
     //===========================================================================
     
-    function scrollreveal() {
+    function scrollReveal() {
         
         window.sr = ScrollReveal();
-        sr.reveal('.sr-icons', {
+        
+        sr.reveal('.sr-services1', {
             duration: 600,
             scale: 0.3,
             distance: '0px'
         }, 200);
+        sr.reveal('.sr-services2', {
+            duration: 600,
+            scale: 0.3,
+            distance: '0px'
+        }, 200);
+        sr.reveal('.sr-services3', {
+            duration: 600,
+            scale: 0.,
+            distance: '0px'
+        }, 200);
+        
+        sr.reveal('.sr-social', {
+            rotate: { x: 360, y: 0, z: 0 },
+            duration: 1000,
+            scale: 0.9,
+            distance: '0px'
+        }, 200);
+        
         sr.reveal('.sr-button', {
             duration: 1000,
             delay: 200
         });
+        
         sr.reveal('.sr-contact', {
             duration: 600,
             scale: 0.3,
-            distance: '0px'
+            distance: '0px',
+            reset: true
         }, 300);
         
     }
@@ -128,11 +168,13 @@
         
         var wScroll = $(window).scrollTop();
         
-        var currentX = $('.parallax-top').css
-        
         $('.parallax-top').css('background-position-y', -100+(wScroll * -0.6)+'px');
         
         $('.parallax-bottom').css('background-position-y', 275+(wScroll * -0.1)+'px');
     }
+    
+    //===========================================================================
+    // Social Media Coin
+    //===========================================================================
 
 })(jQuery); // End of use strict
